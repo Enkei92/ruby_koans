@@ -4,11 +4,8 @@ class DiceSet
   
   attr_reader :values
   
-  def roll(numDie)
-    
-    @values = []
-    
-    numDie.downto(1) { |i| @values.push(1 + rand(6)) }
+  def roll(number)
+     @array = Array.new(number) { rand(1..6) }
   end
 end
 
