@@ -1,7 +1,6 @@
 require File.expand_path(File.dirname(__FILE__) + '/neo')
 
-class DiceSet
-  
+class DiceSet  
   attr_reader :values
   
   def roll(number)
